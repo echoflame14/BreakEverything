@@ -4,6 +4,10 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+* {
+  margin: 0;
+  padding: 0; }
+
 html {
   font-family: sans-serif;
   /* 1 */
@@ -367,5 +371,61 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
+
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+html {
+  width: 100vw;
+  box-sizing: border-box; }
+  html body header {
+    height: 5vh;
+    background: #64675c;
+    width: 100vw; }
+    html body header ul {
+      display: flex;
+      height: 100%;
+      justify-content: space-around; }
+      html body header ul li {
+        font-size: 1rem;
+        text-align: center;
+        display: inline-block;
+        line-height: 5vh; }
+        html body header ul li p {
+          color: white; }
+
+section.gallery {
+  background-color: white;
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  section.gallery .pic {
+    width: 20vw;
+    background-color: gray;
+    margin: 2vh 1vw;
+    transition: all 550ms ease-in-out 5ms; }
+    section.gallery .pic img {
+      height: inherit;
+      width: inherit; }
+    section.gallery .pic h1 {
+      background: red;
+      display: none;
+      height: 100%;
+      margin: 0; }
+  section.gallery .a {
+    background-color: #6a9521;
+    width: 50vw; }
+  section.gallery .b {
+    width: 30vw;
+    margin: 1vh 1vw; }
+    section.gallery .b h1 {
+      display: inline;
+      float: right;
+      width: 50%;
+      font-size: 1rem; }
 
 /*# sourceMappingURL=master.css.map */
