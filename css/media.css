@@ -1,0 +1,78 @@
+@media all and (max-width: 425px) and (min-width: 300px) {
+  html {
+    width: 100vw; }
+    html body header {
+      height: 5vh;
+      margin-bottom: 1vh; }
+      html body header ul {
+        height: 30vh;
+        flex-direction: column; }
+        html body header ul li {
+          display: auto;
+          width: 100vw;
+          height: 10vh;
+          font-size: 1rem;
+          line-height: 5vh; }
+
+  section.gallery .pic {
+    width: 100vw;
+    height: 75vw; }
+  section.gallery .b {
+    width: 100vw;
+    height: 75vw; }
+    section.gallery .b .img {
+      width: 100vw;
+      height: 75vw; }
+    section.gallery .b .des {
+      height: 7vh;
+      line-height: auto;
+      font-size: 10px; } }
+@media all and (max-width: 769px) and (min-width: 426px) {
+  html {
+    width: 100vw; }
+    html body header {
+      height: 5vh;
+      margin-bottom: 1vh; }
+      html body header ul li {
+        font-size: 1rem;
+        line-height: 5vh; }
+
+  section.gallery .pic {
+    width: 31vw;
+    height: 23.25vw; }
+  section.gallery .b {
+    width: 31vw;
+    height: 23.25vw; }
+    section.gallery .b .img {
+      width: 31vw;
+      height: 23.25vw; }
+    section.gallery .b .des {
+      height: 4vh;
+      line-height: auto; }
+      section.gallery .b .des h1 {
+        font-size: 10px; } }
+@media all and (min-width: 770px) {
+  html {
+    width: 100vw; }
+    html body header {
+      height: 5vh;
+      margin-bottom: 1vh; }
+      html body header ul li {
+        font-size: 1rem;
+        line-height: 5vh; }
+
+  section.gallery .pic {
+    width: 23vw;
+    height: 17.25vw; }
+  section.gallery .b {
+    width: 23vw;
+    height: 17.25vw; }
+    section.gallery .b .img {
+      width: 23vw;
+      height: 17.25vw; }
+    section.gallery .b .des {
+      height: 7vh;
+      line-height: 8px;
+      font-size: 8px; } }
+
+/*# sourceMappingURL=media.css.map */

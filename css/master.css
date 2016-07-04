@@ -372,30 +372,23 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
 html {
   width: 100vw;
   box-sizing: border-box; }
-  html body header {
-    height: 5vh;
-    background: #64675c;
-    width: 100vw;
-    margin-bottom: 1vh; }
-    html body header ul {
-      display: flex;
-      height: 100%;
-      justify-content: space-around; }
-      html body header ul li {
-        font-size: 1rem;
-        text-align: center;
-        display: inline-block;
-        line-height: 5vh; }
-        html body header ul li p {
-          color: white; }
+  html body {
+    min-width: 300px; }
+    html body header {
+      background: #64675c;
+      width: 100vw; }
+      html body header ul {
+        display: flex;
+        height: 100%;
+        justify-content: space-around; }
+        html body header ul li {
+          text-align: center;
+          display: inline-block; }
+          html body header ul li p {
+            color: white; }
 
 section.gallery {
   width: 100vw;
@@ -403,11 +396,11 @@ section.gallery {
   display: flex;
   flex-wrap: wrap; }
   section.gallery .pic {
-    width: 23vw;
-    height: 17.25vw;
     background-color: #6a9521;
     margin: 1vw;
-    transition: all 600ms ease-in-out; }
+    transition: 600ms ease-in-out;
+    opacity: .9;
+    position: relative; }
     section.gallery .pic .img {
       width: 100%;
       height: 100%;
@@ -417,21 +410,21 @@ section.gallery {
         height: 100%; }
     section.gallery .pic .des {
       display: none;
-      width: 100%;
       text-align: center;
-      line-height: 1rem; }
+      transition: all 4000ms ease-in-out;
+      opacity: 0.1; }
       section.gallery .pic .des h1 {
         text-align: center; }
   section.gallery .b {
-    width: 31vw;
-    height: 28.25vw; }
-    section.gallery .b .img {
-      width: 31vw;
-      height: 23.25vw; }
+    opacity: 1;
+    z-index: 100; }
     section.gallery .b .des {
+      height: 7vh;
+      background: #64675c;
       display: inline-block;
       width: 100%;
       text-align: center;
-      line-height: 1rem; }
+      opacity: .9;
+      transition: all 200ms; }
 
 /*# sourceMappingURL=master.css.map */

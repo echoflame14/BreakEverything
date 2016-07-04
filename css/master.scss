@@ -1,77 +1,74 @@
 @import "_norm.scss";
-@import "_media.scss";
-$gray:rgb(100, 103, 92);
-$red:rgb(172, 28, 28);
-$green:rgb(106, 149, 33);
-html{
-	width:100vw;
-	box-sizing:border-box;
-	body{
-		header{
-			height:5vh;
-			background:$gray;
-			width:100vw;
-			margin-bottom:1vh;
-			ul{
-				display:flex;
-				height: 100%;
-				justify-content:space-around;
-				li{
-					p{
-						color:white;
+
+	$gray:rgb(100, 103, 92);
+	$red:rgb(172, 28, 28);
+	$green:rgb(106, 149, 33);
+	html{
+		width:100vw;
+		box-sizing:border-box;
+
+		body{
+			min-width:300px;
+			header{
+				background:$gray;
+				width:100vw;
+				ul{
+					display:flex;
+					height: 100%;
+					justify-content:space-around;
+					li{
+						p{
+							color:white;
+						}
+						text-align:center;
+						display:inline-block;
 					}
-					font-size:1rem;
-					text-align:center;
-					display:inline-block;
-					line-height:5vh;
 				}
 			}
 		}
 	}
-}
 
-section.gallery{
-	width:100vw;
-	margin:0 auto;
-	display:flex;
-	flex-wrap:wrap;
-	.pic{
-		width:23vw;
-		height:17.25vw;
-		background-color:$green;
-		margin:1vw;
-		transition:all 600ms ease-in-out;
-		.img{
-			width:100%;
-			height:100%;
-			background:red;
-			img{
+	section.gallery{
+		width:100vw;
+		margin:0 auto;
+		display:flex;
+		flex-wrap:wrap;
+		.pic{
+			background-color:$green;
+			margin:1vw;
+			transition: 600ms ease-in-out;
+			opacity:.9;
+			position:relative;
+			.img{
 				width:100%;
 				height:100%;
+				background:red;
+				img{
+					width:100%;
+					height:100%;
+				}
 			}
-		}
-		.des{
-			display:none;
-			width:100%;
-			text-align:center;
-			line-height:1rem;
-			h1{
+			.des{
+				display:none;
 				text-align:center;
+				transition:all 4000ms ease-in-out;
+				opacity:0.1;
+				h1{
+					text-align:center;
+				}
+			}
+		}
+		.b{
+			opacity: 1;
+			z-index:100;
+			.des{
+				height:7vh;
+				background:$gray;
+				display:inline-block;
+				width:100%;
+				text-align:center;
+				opacity:.9;
+				transition:all 200ms;
 			}
 		}
 	}
-	.b{
-		width:31vw;
-		height:28.25vw;
-		.img{
-			width: 31vw;
-			height:23.25vw;
-		}
-		.des{
-			display:inline-block;
-			width:100%;
-			text-align:center;
-			line-height:1rem;
-		}
-	}
-}
