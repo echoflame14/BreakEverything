@@ -372,6 +372,9 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.clearfix {
+  clear: both; }
+
 html {
   width: 100vw;
   box-sizing: border-box; }
