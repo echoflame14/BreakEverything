@@ -14,6 +14,12 @@
           font-size: 1rem;
           line-height: 5vh; }
 
+  section.gallery .pic.lg-hor {
+    width: 100vw;
+    height: 37.5vw; }
+  section.gallery .pic.norm-vert {
+    width: 100vw;
+    height: 125vw; }
   section.gallery .pic {
     width: 100vw;
     height: 75vw; }
@@ -24,9 +30,11 @@
       width: 100vw;
       height: 75vw; }
     section.gallery .b .des {
-      height: 7vh;
+      height: 3.5vh;
       line-height: auto;
-      font-size: 10px; } }
+      font-size: 10px; }
+      section.gallery .b .des h1 {
+        line-height: 0px; } }
 @media all and (max-width: 769px) and (min-width: 426px) {
   html {
     width: 100vw; }
@@ -37,6 +45,11 @@
         font-size: 1rem;
         line-height: 5vh; }
 
+  section.gallery .pic.lg-hor {
+    width: 64vw; }
+  section.gallery .pic.norm-vert {
+    width: 31vw;
+    height: 41.333vw; }
   section.gallery .pic {
     width: 31vw;
     height: 23.25vw; }
@@ -47,7 +60,7 @@
       width: 31vw;
       height: 23.25vw; }
     section.gallery .b .des {
-      height: 4vh;
+      height: 3.5vh;
       line-height: auto; }
       section.gallery .b .des h1 {
         font-size: 10px; } }
@@ -61,6 +74,11 @@
         font-size: 1rem;
         line-height: 5vh; }
 
+  section.gallery .pic.lg-hor {
+    width: 48vw; }
+  section.gallery .pic.norm-vert {
+    width: 23vw;
+    height: 30.666vw; }
   section.gallery .pic {
     width: 23vw;
     height: 17.25vw; }
@@ -71,7 +89,7 @@
       width: 23vw;
       height: 17.25vw; }
     section.gallery .b .des {
-      height: 7vh;
+      height: 3.5vh;
       line-height: 8px;
       font-size: 8px; } }
 
