@@ -376,35 +376,36 @@ textarea {
   clear: both; }
 
 html {
-  width: 100vw;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100vw; }
   html body {
     min-width: 300px;
-    max-width: 1200px; }
+    max-width: 1200px;
+    padding-bottom: 10vh; }
     html body header {
-      background: #64675c;
-      width: 100vw; }
+      width: 100vw;
+      background: #64675c; }
       html body header ul {
         display: flex;
         height: 100%;
         justify-content: space-around; }
         html body header ul li {
-          text-align: center;
-          display: inline-block; }
+          display: inline-block;
+          text-align: center; }
           html body header ul li p {
             color: white; }
 
 section.gallery {
+  display: flex;
   width: 100vw;
   margin: 0 auto;
-  display: flex;
   flex-wrap: wrap; }
   section.gallery .pic {
-    background-color: #6a9521;
+    position: relative;
     margin: 2vh 1vw;
     transition: 600ms ease-in-out;
     opacity: .9;
-    position: relative; }
+    background-color: #6a9521; }
     section.gallery .pic .img-norm {
       width: 100%;
       height: 100%;
@@ -414,23 +415,23 @@ section.gallery {
         height: 100%; }
     section.gallery .pic .des {
       display: none;
-      text-align: center;
       transition: all 4000ms ease-in-out;
+      text-align: center;
       opacity: 0.1; }
       section.gallery .pic .des h1 {
         text-align: center; }
   section.gallery .b {
-    opacity: 1;
-    z-index: 100; }
+    z-index: 100;
+    opacity: 1; }
     section.gallery .b .des {
-      height: 3.5vh;
-      background: #64675c;
       display: inline-block;
       width: 100%;
+      height: 3.5vh;
+      transition: all 200ms;
       text-align: center;
       opacity: .9;
-      transition: all 200ms;
+      border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px; }
+      background: #64675c; }
 
 /*# sourceMappingURL=master.css.map */

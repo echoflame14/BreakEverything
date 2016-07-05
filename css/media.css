@@ -5,8 +5,8 @@
       height: 5vh;
       margin-bottom: 1vh; }
       html body header ul {
-        height: 30vh;
-        flex-direction: column; }
+        flex-direction: column;
+        height: 30vh; }
         html body header ul li {
           display: auto;
           width: 100vw;
@@ -31,8 +31,8 @@
       height: 75vw; }
     section.gallery .b .des {
       height: 3.5vh;
-      line-height: auto;
-      font-size: 10px; }
+      font-size: 10px;
+      line-height: auto; }
       section.gallery .b .des h1 {
         line-height: 0px; } }
 @media all and (max-width: 769px) and (min-width: 426px) {
@@ -90,7 +90,7 @@
       height: 17.25vw; }
     section.gallery .b .des {
       height: 3.5vh;
-      line-height: 8px;
-      font-size: 8px; } }
+      font-size: 8px;
+      line-height: 8px; } }
 
 /*# sourceMappingURL=media.css.map */
